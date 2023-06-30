@@ -1,4 +1,4 @@
 package com.example.sfgpetclinic.model;
 
-public class Speciality { // For Pojo
+public class Speciality { // For Pojo1
 }

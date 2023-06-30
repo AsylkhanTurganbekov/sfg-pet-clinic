@@ -2,7 +2,7 @@ package com.example.sfgpetclinic.model;
 
 import java.time.LocalDate;
 
-public class Pet { // For Pojo
+public class Pet { // For Pojo1
     private PetType petType;
     private Owner owner;
     private LocalDate birthDate;
