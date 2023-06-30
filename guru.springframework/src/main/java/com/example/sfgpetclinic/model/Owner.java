@@ -1,4 +1,4 @@
 package com.example.sfgpetclinic.model;
 
-public class Owner extends Person {
+public class Owner extends Person { // For Pojo
 }

@@ -1,6 +1,6 @@
 package com.example.sfgpetclinic.model;
 
-public class Person {
+public class Person { // For Pojo
     private String firstName;
     private String LasNamel;
 
