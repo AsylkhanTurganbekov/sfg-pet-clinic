@@ -1,4 +1,4 @@
-package com.example.sfgpetclinic;
+package sfgpetclinic;
 
 import org.springframework.stereotype.Controller;
 

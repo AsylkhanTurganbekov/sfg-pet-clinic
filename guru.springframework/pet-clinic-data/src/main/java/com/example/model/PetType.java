@@ -1,4 +1,4 @@
-package com.example.sfgpetclinic.model;
+package com.example.model;
 
 public class PetType { // For Pojo1
     private String name;
