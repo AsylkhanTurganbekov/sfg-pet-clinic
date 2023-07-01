@@ -21,13 +21,6 @@
     <properties>
         <java.version>8</java.version>
     </properties>
-    <dependencies>
-
-
-
-
-    </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -40,6 +33,13 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
                 </configuration>
             </plugin>
         </plugins>
