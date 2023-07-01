@@ -1,6 +1,6 @@
 package com.example.model;
 
-public class Person { // For Pojo1
+public class Person extends BaseEntity { // For Pojo1
     private String firstName;
     private String LasNamel;
 
