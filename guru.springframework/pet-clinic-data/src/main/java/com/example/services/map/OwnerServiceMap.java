@@ -5,6 +5,7 @@ import com.example.model.Pet;
 import com.example.services.OwnerService;
 import com.example.services.PetService;
 import com.example.services.PetTypeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -12,12 +13,13 @@ import java.util.Set;
 public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
 
 //    private final PetTypeService petTypeService;
+//
 //    private final PetService petService;
-
-    public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
-        this.petTypeService = petTypeService;
-        this.petService = petService;
-    }
+//
+//    public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
+//        this.petTypeService = petTypeService;
+//        this.petService = petService;
+//    }
 
     @Override
     public Set<Owner> findall() {
@@ -37,13 +39,13 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements O
 //                            throw new RuntimeException("Pet Type is rqe");
 //                        }
 //                        if (pet.getId() == null) {
-//                            Pet savedPet = petService.save(pet);
-//                            pet.setId(savedPet.getId());
+////                            Pet savedPet = petService.save(pet);
+////                            pet.setId(savedPet.getId());
 //
 //                        }
 //                    }
 //                });
-            }
+//            }
             return super.save(object);
         }
         else{
