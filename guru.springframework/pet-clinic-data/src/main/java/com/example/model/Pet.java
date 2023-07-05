@@ -1,10 +1,23 @@
 package com.example.model;
 
-import java.time.LocalDate;
+import jakarta.persistence.*;
 
+import java.time.LocalDate;
+@Entity
+@Table(name = "pets ")
 public class Pet extends BaseEntity { // For Pojo1
 
+    @Column(name = "name")
     private String name;
+    @ManyToOne
+    @JoinColumn(name = "type_id")
+    private PetType petType;
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
+    private Owner owner;
+
+    @Column(name = "birth_date")
+    private LocalDate birthDate;
 
     public String getName() {
         return name;
@@ -13,10 +26,6 @@ public class Pet extends BaseEntity { // For Pojo1
     public void setName(String name) {
         this.name = name;
     }
-
-    private PetType petType;
-    private Owner owner;
-    private LocalDate birthDate;
     public void setPetType(PetType petType) {
         this.petType = petType;
     }
