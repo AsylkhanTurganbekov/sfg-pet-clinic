@@ -1,16 +1,17 @@
 package com.example.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Owner extends Person { // For Pojo1
 
     private String address;
-    private Set<Pet>  pet;
+//    private Set<Pet>  pet;
     private String city;
     private String telephone;
-    private Set<Owner> pets;
+    private Set<Pet> pets = new HashSet<>();
 
-    public Set<Owner> getPets() {
+    public Set<Pet> getPets() {
         return pets;
     }
 
@@ -22,13 +23,13 @@ public class Owner extends Person { // For Pojo1
         this.address = address;
     }
 
-    public Set<Pet> getPet() {
-        return pet;
-    }
+//    public Set<Pet> getPet() {
+//        return pet;
+//    }
 
-    public void setPet(Set<Pet> pet) {
-        this.pet = pet;
-    }
+//    public void setPet(Set<Pet> pet) {
+//        this.pet = pet;
+//    }
 
     public String getCity() {
         return city;
@@ -46,7 +47,7 @@ public class Owner extends Person { // For Pojo1
         this.telephone = telephone;
     }
 
-    public void setPets(Set<Owner> pets) {
+    public void setPets(Set<Pet> pets) {
         this.pets = pets;
     }
 

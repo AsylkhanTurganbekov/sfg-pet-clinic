@@ -3,18 +3,27 @@ package com.example.model;
 import java.time.LocalDate;
 
 public class Pet extends BaseEntity { // For Pojo1
+
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     private PetType petType;
     private Owner owner;
     private LocalDate birthDate;
-
-    public PetType getPetType() {
-        return petType;
-    }
-
     public void setPetType(PetType petType) {
         this.petType = petType;
     }
 
+    public PetType getPetType() {
+        return petType;
+    }
     public Owner getOwner() {
         return owner;
     }
