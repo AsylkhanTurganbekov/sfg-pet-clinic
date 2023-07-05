@@ -39,9 +39,8 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements O
 //                            throw new RuntimeException("Pet Type is rqe");
 //                        }
 //                        if (pet.getId() == null) {
-////                            Pet savedPet = petService.save(pet);
-////                            pet.setId(savedPet.getId());
-//
+//                            Pet savedPet = petService.save(pet);
+//                            pet.setId(savedPet.getId());
 //                        }
 //                    }
 //                });
