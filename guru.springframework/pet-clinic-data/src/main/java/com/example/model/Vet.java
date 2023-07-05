@@ -9,17 +9,18 @@ import java.util.Set;
 @Table(name = "vets")
 public class  Vet  extends Person { // For Pojo1
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "vet_specialties",
             joinColumns = @JoinColumn(name= "vet_id"),
             inverseJoinColumns = @JoinColumn(name = "speciality_id"))
-    public Set<Speciality> getSpecialitySet() {
-        return specialitySet;
+    private Set<Speciality> specialities = new HashSet<>();
+
+    public Set<Speciality> getSpecialities() {
+        return specialities;
     }
 
-    public void setSpecialitySet(Set<Speciality> specialitySet) {
-        this.specialitySet = specialitySet;
+    public void setSpecialities(Set<Speciality> specialities) {
+        this.specialities = specialities;
     }
 
-    private Set<Speciality> specialitySet = new HashSet<>();
 }

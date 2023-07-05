@@ -5,7 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "aspecialties")
+@Table(name = "specialties")
 public class Speciality extends BaseEntity { // For Pojo1
     @Column(name = "description")
     private String description;

@@ -9,7 +9,7 @@ public class Person extends BaseEntity { // For Pojo1
     @Column(name="first_name")
     private String firstName;
     @Column(name="last_name")
-    private String LasNamel;
+    private String lastName;
 
     public String getFirstName() {
         return firstName;
@@ -19,11 +19,11 @@ public class Person extends BaseEntity { // For Pojo1
         this.firstName = firstName;
     }
 
-    public String getLasNamel() {
-        return LasNamel;
+    public String getlastName() {
+        return lastName;
     }
 
-    public void setLasNamel(String lasNamel) {
-        LasNamel = lasNamel;
+    public void setLastName(String lastName) {
+        lastName = lastName;
     }
 }
