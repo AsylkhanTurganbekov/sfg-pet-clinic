@@ -4,10 +4,14 @@ import com.example.model.Owner;
 import com.example.model.PetType;
 import com.example.repositories.PetTypeRepository;
 import com.example.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
+@Profile("springdatajpa")
 public class PetTypeSDJpaService implements PetTypeService {
     private final PetTypeRepository petTypeRepository;
 
