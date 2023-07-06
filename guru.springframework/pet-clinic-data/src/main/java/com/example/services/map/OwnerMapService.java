@@ -1,7 +1,10 @@
 package com.example.services.map;
 
 import com.example.model.Owner;
+import com.example.model.Pet;
 import com.example.services.OwnerService;
+import com.example.services.PetService;
+import com.example.services.PetTypeService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -11,8 +14,7 @@ public class OwnerMapService extends AbstractMapService<Owner,Long> implements O
 //    private final PetTypeService petTypeService;
 //
 //    private final PetService petService;
-//
-//    public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
+//    public OwnerMapService(PetTypeService petTypeService, PetService petService) {
 //        this.petTypeService = petTypeService;
 //        this.petService = petService;
 //    }
@@ -26,21 +28,21 @@ public class OwnerMapService extends AbstractMapService<Owner,Long> implements O
     public Owner save(Owner object) {
 
         if(object!=null) {
-//            if(object.getPets() != null) {
+            if(object.getPets() != null) {
 //                object.getPets().forEach(pet -> {
 //                    if(pet.getPetType()!=null) {
 //                        if(pet.getPetType().getId() == null) {
 //                            pet.setPetType(petTypeService.save(pet.getPetType()));
 //                        }else{
-//                            throw new RuntimeException("Pet Type is rqe");
-//                  w      }
+//                            throw new RuntimeException("Pet Type is req");
+//                        }
 //                        if (pet.getId() == null) {
 //                            Pet savedPet = petService.save(pet);
 //                            pet.setId(savedPet.getId());
 //                        }
 //                    }
 //                });
-//            }
+            }
             return super.save(object);
         }
         else{
