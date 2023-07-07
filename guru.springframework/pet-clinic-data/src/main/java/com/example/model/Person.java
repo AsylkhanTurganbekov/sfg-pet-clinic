@@ -1,10 +1,11 @@
 package com.example.model;
 
+import jakarta.persistence.Access;
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
+import org.springframework.data.annotation.AccessType;
 
 @MappedSuperclass
-
 public class Person extends BaseEntity { // For Pojo1
     @Column(name="first_name")
     private String firstName;
@@ -12,7 +13,7 @@ public class Person extends BaseEntity { // For Pojo1
     private String lastName;
 
     public String getFirstName() {
-        return firstName;
+        return this.firstName;
     }
 
     public void setFirstName(String firstName) {
@@ -20,10 +21,10 @@ public class Person extends BaseEntity { // For Pojo1
     }
 
     public String getlastName() {
-        return lastName;
+        return this.lastName;
     }
 
     public void setLastName(String lastName) {
-        lastName = lastName;
+        this.lastName = lastName;
     }
 }

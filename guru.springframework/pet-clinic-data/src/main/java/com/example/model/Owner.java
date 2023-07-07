@@ -10,7 +10,6 @@ public class Owner extends Person { // For Pojo1
 
     @Column(name = "address")
     private String address;
-//    private Set<Pet>  pet;
     @Column(name = "city")
     private String city;
     @Column(name = "telephone")
@@ -29,14 +28,6 @@ public class Owner extends Person { // For Pojo1
     public void setAddress(String address) {
         this.address = address;
     }
-
-//    public Set<Pet> getPet() {
-//        return pet;
-//    }
-
-//    public void setPet(Set<Pet> pet) {
-//        this.pet = pet;
-//    }
 
     public String getCity() {
         return city;

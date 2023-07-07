@@ -104,7 +104,6 @@ public class DataLoader implements CommandLineRunner {
         catVisit.setDescription("Sneezy Kitty");
 
         visitService.save(catVisit);
-
         System.out.println("Loaded Owners..");
 
         Vet vet1 = new Vet();
