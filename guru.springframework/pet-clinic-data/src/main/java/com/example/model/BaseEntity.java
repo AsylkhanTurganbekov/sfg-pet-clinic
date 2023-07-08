@@ -9,18 +9,12 @@ import lombok.*;
 import java.io.Serializable;
 
 
-@Data
 @MappedSuperclass // base class JPA  , other class will inherit it
+@Getter
+@Setter
+
 public class BaseEntity implements Serializable { // For Pojo
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    public BaseEntity() {
-    }
-
-    protected boolean canEqual(final Object other) {
-        return other instanceof BaseEntity;
-    }
-
 }
