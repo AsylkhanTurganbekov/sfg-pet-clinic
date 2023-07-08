@@ -12,7 +12,8 @@ import java.io.Serializable;
 @MappedSuperclass // base class JPA  , other class will inherit it
 @Getter
 @Setter
-
+@NoArgsConstructor
+@AllArgsConstructor
 public class BaseEntity implements Serializable { // For Pojo
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
