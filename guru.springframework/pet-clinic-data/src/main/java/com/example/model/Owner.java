@@ -10,7 +10,6 @@ import java.util.Set;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 public class Owner extends Person { // For Pojo1
 
     public Owner(Long id, String firstName, String lastName, String address, String city, String telephone, Set<Pet> pets) {
@@ -20,8 +19,6 @@ public class Owner extends Person { // For Pojo1
         this.telephone = telephone;
         this.pets = pets;
     }
-
-
 
     @Column(name = "address")
     private String address;
