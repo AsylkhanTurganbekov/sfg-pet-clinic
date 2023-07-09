@@ -1,16 +1,12 @@
 package com.example.model;
 
-import jakarta.persistence.Access;
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.annotation.AccessType;
 
 @MappedSuperclass
-@Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
@@ -26,4 +22,12 @@ public class Person extends BaseEntity { // For Pojo1
     private String firstName;
     @Column(name="last_name")
     private String lastName;
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
 }
